@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option home selected">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="" onclick="return false">Home</a>
+                </div>
+                <div class="nav-option search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="" onclick="return false">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" alt="Your Library Icon">
+                        <a href="">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll leep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="" class="control-icons">
+                    <img src="./assets/forward_icon.png" alt="" class="hide control-icons">
+                </div>
+                <div class="sticky-nav-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What do you want to listen to?" name="search-bar" id="searchBar">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>                                
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>                
+            </div>
+
+            <br><br><br><br><br><br>
+
+            <div>
+                <div class="extra-info">
+                    <div class="company-links">
+                        <p style="font-weight: bold; opacity:1;">Company</p>
+                        <p class="extra-link-icons">About</p>
+                        <p class="extra-link-icons">Jobs</p>
+                        <p class="extra-link-icons">For the Record</p>
+                    </div>
+                    <div class="community-links">
+                        <p style="font-weight: bold; opacity:1;">Communities</p>
+                        <p class="extra-link-icons">For Artist</p>
+                        <p class="extra-link-icons">Developers</p>
+                        <p class="extra-link-icons">Advertising</p>
+                        <p class="extra-link-icons">Investors</p>
+                        <p class="extra-link-icons">Vendors</p>
+                    </div>
+                    <div class="useful-links">
+                        <p style="font-weight: bold; opacity:1;">Useful links</p>
+                        <p class="extra-link-icons">Support</p>
+                        <p class="extra-link-icons">Free Mobile App</p>
+                    </div>
+                    <div class="social-media">
+                        <i class="fa-brands fa-instagram fa-xl social-media-icon"></i>
+                        <i class="fa-brands fa-twitter fa-xl social-media-icon"></i>
+                        <i class="fa-brands fa-facebook fa-xl social-media-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+            <div class="ending">
+                <div class="ending-info1">
+                    <a href="">Legal</a>
+                    <a href="">Privacy Centre</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">About ads</a>
+                    <a href="">Accessibility</a>
+                </div>
+                <div class="ending-info2">
+                    © 2023 Spotify AB
+                </div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-pic" style="margin: 0.2rem; padding: 0.2rem;">
+                    <img src="./assets/songpic1.png" alt="SongPicutre">
+                </div>
+                <div class="album-content">
+                    <div class="album-content-name" style="margin: 0.2rem; padding: 0.2rem; font-weight: 600;"><a href="">Rise</a></div>
+                    <div class="album-content-info" style="margin: 0.2rem; padding: 0.2rem; font-size: 0.75rem;"><a href="">Jonas Blue, Jack & Jack</a></div>
+                </div>
+                <div class="album-icons">
+                    <i class="fa-regular fa-heart control-icons"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon previous-song">
+                    <img src="./assets/player_icon3.png" class="player-control-icon pause-play" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon next-song">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" value="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:38</span>
+                </div>
+            </div>
+            <div class="contols">
+
+                <a><span class="material-symbols-outlined control-icons">
+                    slideshow
+                </span></a>
+
+                <a><span class="material-symbols-outlined control-icons">
+                    lyrics
+                </span></a>
+
+                <a><span class="material-symbols-outlined control-icons">
+                    queue_music
+                </span></a>
+
+                <a><span class="material-symbols-outlined control-icons">
+                    speaker
+                </span></a>
+
+                <a><span class="material-symbols-outlined control-icons">
+                    volume_up
+                </span></a>
+
+                <input type="range" min="0" max="100" class="volume-bar control-icons" step="1">
+
+                <span class="material-symbols-outlined control-icons">
+                    pip
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
